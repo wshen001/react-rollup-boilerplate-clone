@@ -24,11 +24,19 @@ export default {
       format: 'es',
       exports: 'named',
     },
+    {
+      file: pkg.browser,
+      format: 'umd',
+      name: 'reactSampleComponents',
+      globals: {
+        react: 'React',
+      },
+    },
   ],
   plugins: [
     postcss({
       plugins: [],
-      minimize: true,
+      minimize: false,
     }),
     external({
       includeDependencies: true,

@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import cx from 'classnames';
 import './styles.css';
 
 export interface IButtonProps {
@@ -10,7 +9,7 @@ export interface IButtonProps {
 }
 
 export const Button: FC<IButtonProps> = ({ onClick, disabled, className, text }) => (
-  <button type="button" className={cx('button', className)} onClick={onClick} disabled={disabled}>
-    {text}
+  <button type="button" onClick={onClick} disabled={disabled}>
+    {text} Yes, Built Successful!
   </button>
 );
