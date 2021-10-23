@@ -1,15 +1,11 @@
 {
-  "name": "react-rollup-boilerplate",
-  "version": "3.0.0",
+  "name": "react-rollup-boilerplate-clone",
+  "version": "3.0.2",
   "description": "Boilerplate for writing React Libraries bundled with Rollup.js to commonJs and ES6 Modules and React Styleguidist",
   "author": "Kai Hotz",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:KaiHotz/react-rollup-boilerplate.git"
-  },
-  "homepage": "https://github.com/KaiHotz/react-rollup-boilerplate",
   "main": "dist/index.js",
+  "browser": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "types": "dist/index.d.ts",
